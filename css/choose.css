@@ -1,0 +1,11 @@
+body {
+    background-image: url('../img/blurbg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+img{
+    height: 450px;
+    width: 450px;
+    margin-top: 150px;
+    margin-left: 200px;
+}

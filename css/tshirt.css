@@ -1,0 +1,131 @@
+/*
+** Author : Chafik Amraoui
+** Date   : 14/09/2020
+** Title  : T-shirt Color Generator
+*/
+
+/* Global Rules  */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --color: rgb(255, 255, 255);
+}
+.container {
+  margin: auto;
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.image_container {
+  margin-top: -20px;
+  width: 50%;
+  order: 1;
+  flex-basis: 100%;
+  float: left;
+}
+.name{
+  font-size: xx-large;
+  font-weight: bolder;
+  font-family:monospace;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+#tshirt-div{
+  margin-top: 5px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: black;
+  width: 510px;
+  height: 60%;
+  }
+  #tshirt-div {
+    width: 452px;
+    height: 500px;
+    position: relative;
+    background-color: #fff;
+  }
+.customs {
+  
+    margin-top: 50px;
+    font-weight: bolder;
+    font-size: x-large;
+    float: right;
+    width: 50%;
+    order: 2;
+    flex-basis: 100%;
+  }
+#tshirt-div img {
+    margin-top: 50px;
+    margin-left: 20px;
+    display: block;
+    background-color: var(--color);
+  }
+.drawing-area {
+    margin-top: 80px;
+    margin-left: -2px;
+    position: absolute;
+    top: 60px;
+    left: 121px;
+    z-index: 10;
+    width: 200px;
+    height: 280px;
+    border: 1px solid black;
+  }
+.canvas-container {
+    width: 120px;
+    position: relative;
+    user-select: none;
+  }
+  #canvas {
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    left: 0px;
+    top: 0px;
+    user-select: none;
+    cursor: default;
+  }
+  
+  #data-color{
+    margin-top: 30px;
+  }
+  #data-color li{
+    width: 30px;
+    height: 30px;
+    /* background-color:var(--color) ; */
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .btn {
+    background-color: DodgerBlue;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .image_container {
+      order: 0;
+      flex-basis: auto;
+      text-align: left;
+    }
+  
+    .customs {
+      order: 2;
+      flex-basis: auto;
+      text-align: left;
+    }
+  }

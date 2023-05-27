@@ -1,0 +1,56 @@
+body{
+  background-color: rgb(135, 185, 234);
+}
+
+
+
+a:link, a:visited {
+  margin-left: 20px;
+  color: rgb(59, 88, 212);
+}
+a:hover, a:active {
+  color: rgb(30, 207, 47);
+}
+.image{
+  margin-top: 0px;
+  margin-left: 35px;
+  float: left;
+  background-color: rgb(135, 185, 234);
+}
+  .input{
+    width: 350px;
+    height: 30px;
+    font-size: large;
+    background-color: transparent;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+  }
+  .loginform{
+    background-color: rgb(246, 242, 242);
+    text-align: center;
+    position: relative;
+    top: 30px;
+    margin-top: 120px;
+    margin-right: 180px;
+    height: 420px;
+    width: 450px;
+    align-content: center;
+    float: right;
+    filter: contrast(2px);
+    border: 2px solid rgb(59, 88, 212);
+  }
+  .button{
+    width: 350px;
+    height: 1cm;
+    font-weight: bolder;
+    font-size: large;
+    background-color: rgb(59, 88, 212);
+    border-radius: 37px;
+    color: white;
+  }
+  .button:hover{
+    background-color: rgb(30, 207, 47);
+    color: rgb(234, 235, 242);
+  }

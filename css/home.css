@@ -1,0 +1,205 @@
+#homepg{
+  position: absolute;
+  z-index: 5;
+}
+*{
+  margin: 0;
+  padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+  min-width: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  min-height: 12vh;
+  min-width: 100%;
+  z-index: 10;
+  background: black;
+  border-bottom: 2px solid #0c2d48;
+  position: relative;
+}
+header .navigation .logo{
+  margin-left: 20px;
+}
+
+header .navigation .logo h1{
+  color: #b1d4e0;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+header .navigation .menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+  margin: auto 20px auto 0;
+}
+
+header .navigation .humbarger {
+  margin-right: 20px;
+  display: none;
+ }
+ 
+header .navigation .humbarger .bar{
+  width: 30px;
+  height: 2px;
+  margin: 7px;
+  background: #b1d4e0;
+ }
+
+header .navigation .menu-list li a {
+  color: #b1d4e0;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 1s ease, border 1s ease;
+  text-decoration: none;
+} 
+/* ====================
+  Responsive Section
+=======================*/
+
+/* Tablet desktop :768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  header .navigation .menu-list {
+    width: 60%;
+  }
+
+  header .navigation .menu-list li a{
+    font-size: 1rem;
+  }
+
+}
+
+/* Large Mobile :480px. */
+
+@media only screen and (max-width: 767px) {
+
+  header .navigation .menu-list {
+    position: absolute;
+    top: 12vh;
+    min-width: 100%;
+    background: rgba(15, 20, 35, 0.99);
+    text-align: center;
+    display: none;
+  }
+
+  header .navigation .menu-list li {
+    display: block;
+  }
+
+  header .navigation .menu-list li a {
+    display: block;
+    padding: 20px;
+    transition: color 1s ease, padding 1s ease, background-color 1s ease;
+
+  }
+
+  header .navigation .menu-list li a:hover{
+    color: #b1d4e0;
+    padding-left: 30px;
+    background: rgba(177, 212, 224, 0.2);
+  }
+
+
+  header .navigation .humbarger{
+    display: block;
+  }
+
+}
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+.homeimg{
+  width: 100%;}
+.homeimg1{
+  width: 100%;
+  height: 100%;
+}
+
+
+.product1{
+  margin-top: 30px;
+  color: #000;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 70px;
+}
+.product1 h1{
+  color: rgb(50, 53, 109);
+}
+.description{
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.description h1{
+  margin-left: 40px;
+  font-size: 28px;
+  color: rgb(50, 53, 109);
+}
+.description li{
+  font-size: 24px;
+  margin-left: 150px;
+  margin-top: 30px;
+}
+.description img{
+  margin-top: 30px;
+  margin-left: 150px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: black; /* Set background color for the dropdown menu */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add a shadow effect to the dropdown menu */
+  border-radius: 5px; /* Add rounded corners to the dropdown menu */
+  padding: 10px;
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #646262; /* Change the background color of the dropdown option when hovered */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+

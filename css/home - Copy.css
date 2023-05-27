@@ -1,0 +1,147 @@
+.header{
+  background-color: black;
+
+}
+#head {
+    list-style-type: none;
+    padding-top: 20px;
+    margin-bottom: 0px;
+    float: right;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    overflow: hidden;
+    background-color: transparent;
+    width: 1350px;
+    height: 65px;
+  }
+
+  #head li {
+    font-size: medium;
+    font-weight: bolder;
+    padding-left: 30px;
+    padding-right:30px;
+    float: left;
+  }
+  
+  #head li a {
+    margin-top: 3px;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    padding: 15px 15px;
+    font-size: large;
+    text-decoration: none;
+  }
+  
+  #head li a:hover:not(.active) {
+    background-color: transparent;
+    color: rgb(87, 184, 216);
+  }
+  #head li input[type=text] {
+    border: 1px solid rgb(233, 232, 228);
+    color: white;
+    border-radius: 7px 30px 7px 30px;
+    background-color: transparent;
+    width: 350px;
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+.img{
+  width: 100%;
+  height: 85%;
+}
+.img1{
+  width: 100%;
+  height: 105%;
+}
+#overlay {
+  margin-top: 175px;
+  margin-left:460px;
+  position: fixed;
+  display: none;
+  width: 40%;
+  height: 70%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(1, 5, 10, 0.516);
+  z-index: 2;
+  cursor: pointer;
+}
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+#overlay a:hover, #overlay a:focus {
+  color: #f1f1f1;
+}
+.overlay-content {
+  position: relative;
+  top: 7%;
+  left: 38%;
+  width: 100%;
+  text-align: inherit;
+  margin-top: 30px;
+}
+
+#overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #fafafa;
+  display: block;
+  transition: 0.3s;
+}
+@media screen and (max-height: 450px) {
+  #overlay a {font-size: 20px}
+  #overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }}
+
+.product1{
+  margin-top: 70px;
+  color: #000;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 70px;
+}
+.product1 h1{
+  color: rgb(50, 53, 109);
+}
+.description{
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.description h1{
+  margin-left: 40px;
+  font-size: 28px;
+  color: rgb(50, 53, 109);
+}
+.description li{
+  font-size: 24px;
+  margin-left: 150px;
+  margin-top: 30px;
+}
+.description img{
+  margin-top: 30px;
+  margin-left: 150px;
+}

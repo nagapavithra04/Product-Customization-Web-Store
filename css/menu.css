@@ -1,0 +1,154 @@
+body{
+  margin: 0%;
+}
+#page1{
+    block-size: 100%;
+    background-image: url("../img/bgimg.jpg");
+    background-repeat: no-repeat;
+    background-position-y: -65px;
+  } 
+#page2{
+
+  block-size: 100%;
+  color: white;
+  background-image: url("../img/img1.jpg");
+  background-repeat: no-repeat;
+  background-size: 1400px 1500px;
+ 
+}
+#page3{
+  block-size: 100%;
+  color: white;
+  background-color: rgb(21, 21, 21);
+  background-repeat: no-repeat;
+  background-size: 100%;
+ 
+}
+  h1{
+    color: rgb(153, 142, 142);
+    margin-top: 140px;
+    margin-left: 95px;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #page1 ul {
+      list-style-type: none;
+      margin-top: 40px;
+      margin-bottom: 0px;
+      float: right;
+      padding-left: 0px;
+      padding-right: 0px;
+      overflow: hidden;
+      background-color: transparent;
+      width: 1150px;
+    }
+  
+    #page1 li {
+      font-size: medium;
+      font-weight: bolder;
+      padding-left: 13px;
+      padding-right: 13px;
+      float: left;
+    }
+    
+    #page1 li a {
+      display: block;
+      color: rgb(228, 220, 220);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    #page1 li a:hover:not(.active) {
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+    }
+    #page1 li input[type=text] {
+      border: 1px solid rgb(233, 232, 228);
+      color: white;
+      border-radius: 7px 30px 7px 30px;
+      background-color: transparent;
+      width: 350px;
+      float: right;
+      padding: 6px;
+      margin-top: 8px;
+      margin-right: 16px;
+      font-size: 17px;
+    }
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    
+    
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+    .active {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+    .logo{
+       animation-name: spin;
+       animation-duration: 8s;
+       animation-iteration-count: infinite;
+       animation-timing-function: linear; 
+       
+    }
+    @keyframes spin {
+      from {
+          transform:rotateY(0deg);
+      }
+      to {
+          transform:rotateY(360deg);
+      }
+    } 
+    .menu1{
+      width: 50%;
+      padding-top: 280px;
+      margin-top: 20px;
+      float: left;
+      font-size: x-large;
+    }
+    .menu1 li{
+      list-style-type: none;
+      margin-left: 340px;
+      padding-bottom: 15px;
+    }
+    .menu2{
+      width: 50%;
+      padding-top: 280px;
+      margin-top: 20px;
+      float: right;
+      font-size: x-large;
+    }
+    .menu2 li{
+      list-style-type: none;
+      margin-left: 80px;
+      padding-bottom: 15px;
+    }
